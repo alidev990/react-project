@@ -23,7 +23,7 @@ const Home = () => {
 
       <Header />
       <main>
-        {/* Hero section */}
+        {/* Hero section */} 
         <section className='section-1'>
           <div className='hero d-flex align-items-center'>
             <div className='container-fluid'>
@@ -35,6 +35,7 @@ const Home = () => {
                 <div className='mt-4'>
                   <a className='btn btn-primary'>Contact Now</a>
                   <a className='btn btn-secondary ms-3'>View Projects</a>
+                  <h1>ali</h1>
                 </div>
               </div>
             </div>
