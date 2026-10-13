@@ -218,7 +218,14 @@ footer{
 .section-5{
      .card{
         .card-body{
-            
+            .rating{
+                color: $secondary-color;
+            }
+            .content{
+                p{
+                    font-size: 1em;
+                }
+            }
         }
      }     
 }
