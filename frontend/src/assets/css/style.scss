@@ -216,7 +216,11 @@ footer{
 }
 
 .section-5{
+    .swiper{
+        padding: 25px;
+    }
      .card{
+        border-radius: 40px;
         .card-body{
             .rating{
                 color: $secondary-color;
@@ -225,6 +229,15 @@ footer{
                 p{
                     font-size: 1em;
                 }
+            }
+            .meta{
+                img{
+                    border-radius: 50%;
+                }
+            }
+            .name{
+                font-size: 1.3em;
+                font-weight: 500;
             }
         }
      }     
