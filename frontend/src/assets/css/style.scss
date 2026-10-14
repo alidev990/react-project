@@ -103,6 +103,9 @@ header {
             color: $text-color;
             font-weight: 500;
             margin-left: 20px;
+            &:hover{
+                color: $primary-color;
+            }
         }
 
         .logo {
