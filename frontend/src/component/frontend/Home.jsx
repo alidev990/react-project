@@ -14,6 +14,8 @@ import ConImg7 from '../../assets/images/construction9.jpg';
 import Icon1 from '../../assets/images/icon-1.svg';
 import Icon2 from '../../assets/images/icon-2.svg';
 import Icon3 from '../../assets/images/icon-3.svg';
+import BlogImg from '../../assets/images/construction10.jpg'
+import BlogImg2 from '../../assets/images/construction11.jpg'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import AvatarImg from '../../assets/images/author-2.jpg';
@@ -37,9 +39,9 @@ const Home = () => {
                   precision and excellence.</h1>
                 <p>We excel at transforming visions into reality through outstanding craftsmanship and precise <br />attention to detail. With years of experience and a dedication to quality.</p>
                 <div className='mt-4'>
-                  <a className='btn btn-primary'>Contact Now</a>
-                  <a className='btn btn-secondary ms-3'>View Projects</a>
-                  <h1>ali</h1>
+                  <a className='btn btn-primary large'>Contact Now</a>
+                  <a className='btn btn-secondary ms-3 large'>View Projects</a>
+
                 </div>
               </div>
             </div>
@@ -87,7 +89,7 @@ const Home = () => {
                     <div className='service-content'>
                       <p>Specialty construction is a niche sector within the construction industry that focuses on projects requiring specialized skills, materials, and techniques.</p>
                     </div>
-                    <a href="#" className='btn btn-primary'>Read More</a>
+                    <a href="#" className='btn btn-primary small'>Read More</a>
                   </div>
                 </div>
 
@@ -105,7 +107,7 @@ const Home = () => {
                     <div className='service-content'>
                       <p>Specialty construction is a niche sector within the construction industry that focuses on projects requiring specialized skills, materials, and techniques.</p>
                     </div>
-                    <a href="#" className='btn btn-primary'>Read More</a>
+                    <a href="#" className='btn btn-primary small'>Read More</a>
                   </div>
                 </div>
 
@@ -123,7 +125,7 @@ const Home = () => {
                     <div className='service-content'>
                       <p>Specialty construction is a niche sector within the construction industry that focuses on projects requiring specialized skills, materials, and techniques.</p>
                     </div>
-                    <a href="#" className='btn btn-primary'>Read More</a>
+                    <a href="#" className='btn btn-primary small'>Read More</a>
                   </div>
                 </div>
 
@@ -141,7 +143,7 @@ const Home = () => {
                     <div className='service-content'>
                       <p>Specialty construction is a niche sector within the construction industry that focuses on projects requiring specialized skills, materials, and techniques.</p>
                     </div>
-                    <a href="#" className='btn btn-primary'>Read More</a>
+                    <a href="#" className='btn btn-primary small'>Read More</a>
                   </div>
                 </div>
 
@@ -233,7 +235,7 @@ const Home = () => {
                     <div className='service-content'>
                       <p>Specialty construction is a niche sector within the construction industry that focuses on projects requiring specialized skills, materials, and techniques.</p>
                     </div>
-                    <a href="#" className='btn btn-primary'>Read More</a>
+                    <a href="#" className='btn btn-primary small'>Read More</a>
                   </div>
                 </div>
 
@@ -251,7 +253,7 @@ const Home = () => {
                     <div className='service-content'>
                       <p>Specialty construction is a niche sector within the construction industry that focuses on projects requiring specialized skills, materials, and techniques.</p>
                     </div>
-                    <a href="#" className='btn btn-primary'>Read More</a>
+                    <a href="#" className='btn btn-primary small'>Read More</a>
                   </div>
                 </div>
 
@@ -269,7 +271,7 @@ const Home = () => {
                     <div className='service-content'>
                       <p>Specialty construction is a niche sector within the construction industry that focuses on projects requiring specialized skills, materials, and techniques.</p>
                     </div>
-                    <a href="#" className='btn btn-primary'>Read More</a>
+                    <a href="#" className='btn btn-primary small'>Read More</a>
                   </div>
                 </div>
 
@@ -287,7 +289,7 @@ const Home = () => {
                     <div className='service-content'>
                       <p>Specialty construction is a niche sector within the construction industry that focuses on projects requiring specialized skills, materials, and techniques.</p>
                     </div>
-                    <a href="#" className='btn btn-primary'>Read More</a>
+                    <a href="#" className='btn btn-primary small'>Read More</a>
                   </div>
                 </div>
 
@@ -306,6 +308,7 @@ const Home = () => {
               <p>We offer a diverse array of construction services, spanning residential, commercial, and industrial projects.</p>
             </div>
             <Swiper
+              modules={[Pagination]}
               spaceBetween={50}
               slidesPerView={3}
               pagination={{ clickable: true }}
@@ -464,6 +467,31 @@ const Home = () => {
           </div>
         </section>
 
+
+        <section className='section-6 bg-light py-5'>
+          <div className='container'>
+            <div className='section-header text-center'>
+              <span>Blog & News</span>
+              <h2>Articles & blog posts</h2>
+              <p>We offer a diverse array of construction services, spanning residential, commercial, and industrial projects.</p>
+            </div>
+            <div className='row'>
+              <div className='col-md-4'>
+                <div className='card shadow border-0'>
+                  <div className='card-img-top'>
+                    <img src={BlogImg} alt="" className='w-100' />
+                  </div>
+                  <div className='card-body p-5'>
+                     <div className='mb-3'>
+                      <a href="#" className='title'>Dummy blog title</a>
+                     </div>
+                     <a href="#" className='btn btn-primary small'>Read More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
 
       </main>
