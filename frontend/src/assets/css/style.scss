@@ -29,38 +29,39 @@ p {
     font-size: 1.2em;
 }
 
-.bg-light{
+.bg-light {
     background-color: $light-background;
 }
 
-ul{
+ul {
     margin-left: 0;
     padding-left: 0;
 
-    li{
+    li {
         list-style: none;
     }
 }
 
-a{
+a {
     text-decoration: none;
-    color:$text-color;
-    &:hover{
+    color: $text-color;
+
+    &:hover {
         color: $primary-color;
     }
 }
 
-.small{
-     padding: 10px 15px;
+.small {
+    padding: 10px 15px;
 }
 
-.large{
-     padding: 15px 20px;
+.large {
+    padding: 15px 20px;
 }
 
 .btn-primary {
     background-color: $primary-color;
-    border: 1px solid $primary-color; 
+    border: 1px solid $primary-color;
     font-size: 1em;
     font-weight: 500;
     text-transform: uppercase;
@@ -84,8 +85,8 @@ a{
     }
 }
 
-.section-header{
-    span{
+.section-header {
+    span {
         color: $primary-color;
         font-size: 1.2em;
         padding-bottom: 10px;
@@ -103,7 +104,8 @@ header {
             color: $text-color;
             font-weight: 500;
             margin-left: 20px;
-            &:hover{
+
+            &:hover {
                 color: $primary-color;
             }
         }
@@ -120,24 +122,27 @@ header {
     }
 }
 
-footer{
-      background-color: $dark-background;
-      color: $text-white;
-      h3{
+footer {
+    background-color: $dark-background;
+    color: $text-white;
+
+    h3 {
         font-size: 1.5em;
         color: $secondary-color;
-      }
-      ul{
-        li{
+    }
+
+    ul {
+        li {
             padding: 5px 0s;
         }
-      }
-      a{
+    }
+
+    a {
         color: $text-white;
         font-size: 1.2em;
         text-decoration: none;
 
-      }
+    }
 }
 
 
@@ -159,11 +164,13 @@ footer{
         }
     }
 }
-.section-2{
-    img{
+
+.section-2 {
+    img {
         border-radius: 40px;
     }
-    span{
+
+    span {
         color: $primary-color;
         font-size: 1.2em;
         padding-bottom: 10px;
@@ -172,31 +179,34 @@ footer{
     }
 }
 
-.section-3{
-     .item{
+.section-3 {
+    .item {
         position: relative;
         overflow: hidden;
         margin-bottom: 20px;
-        &:hover{
-            .service-body{
+
+        &:hover {
+            .service-body {
                 transform: translateY(0%);
-                  
-                .service-content{
+
+                .service-content {
                     opacity: 1;
                 }
             }
         }
-        .service-image{
+
+        .service-image {
             position: relative;
             overflow: hidden;
-            img{
+
+            img {
                 width: 100%;
                 border-radius: 40px;
                 aspect-ratio: 1 / 1.2;
                 object-fit: cover;
             }
 
-            &::after{
+            &::after {
                 content: "";
                 position: absolute;
                 top: 0;
@@ -204,73 +214,125 @@ footer{
                 bottom: 0;
                 right: 0;
                 border-radius: 40px;
-                background: linear-gradient(180deg, rgba(217,217,217,0) 0%, rgba(217,217,217,0) 13.02%, rgba(0,0,0,0.51) 42.5%, rgba(0,0,0,0.63) 70%, #000 100% );
+                background: linear-gradient(180deg, rgba(217, 217, 217, 0) 0%, rgba(217, 217, 217, 0) 13.02%, rgba(0, 0, 0, 0.51) 42.5%, rgba(0, 0, 0, 0.63) 70%, #000 100%);
             }
         }
 
-        .service-body{
+        .service-body {
             color: $text-white;
-            position :absolute;
+            position: absolute;
             left: 30px;
             right: 30px;
             bottom: 30px;
             transform: translateY(80%);
             transition: all 0.4s ease-in-out;
 
-            .service-content{
+            .service-content {
                 transition: all 0.4s ease-in-out;
                 opacity: 0;
             }
         }
-     }
+    }
 }
-.section-4{
-    .card{
+
+.section-4 {
+    .card {
         border-radius: 40px;
         margin-bottom: 20px;
     }
 }
 
-.section-5{
-    .swiper{
+.section-5 {
+    .swiper {
         padding: 25px 25px 50px 25px;
-        .swiper-pagination-bullet-active{
+
+        .swiper-pagination-bullet-active {
             background-color: $secondary-color;
         }
     }
-     .card{
+
+    .card {
         border-radius: 40px;
-        .card-body{
-            .rating{
+
+        .card-body {
+            .rating {
                 color: $secondary-color;
             }
-            .content{
-                p{
+
+            .content {
+                p {
                     font-size: 1em;
                 }
             }
-            .meta{
-                img{
+
+            .meta {
+                img {
                     border-radius: 50%;
                 }
             }
-            .name{
+
+            .name {
                 font-size: 1.3em;
                 font-weight: 500;
             }
         }
-     }     
+    }
 }
-.section-6{
-    .card{
+
+.section-6 {
+    .card {
         border-radius: 40px;
-        img{
+
+        img {
             border-top-left-radius: 40px;
             border-top-right-radius: 40px;
         }
-        .card-body{
-            a.title{
+
+        .card-body {
+            a.title {
                 font-size: 1.4em;
+            }
+        }
+    }
+}
+
+.section-7 {
+    .hero {
+
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url('../images/hero.jpg');
+        min-height: 500px;
+
+        color: $text-white;
+
+        span {
+            color: $secondary-color;
+            font-size: 1.5em;
+            font-weight: 500;
+        }
+    }
+}
+
+.section-8 {
+    .card {
+        border-radius: 40px;
+
+        img {
+            border-top-left-radius: 40px;
+            border-top-right-radius: 40px;
+        }
+
+        .card-body {
+            a.title {
+                font-size: 1.4em;
+            }
+            .card-title{
+                font-size: 1.5em;
+                font-weight: 500;
+            }
+            .card-sub-title{
+                font-size: 1.3em;
+                color: $light-background;
+               
             }
         }
     }
