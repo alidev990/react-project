@@ -14,7 +14,7 @@ import ConImg7 from '../../assets/images/construction9.jpg';
 import Icon1 from '../../assets/images/icon-1.svg';
 import Icon2 from '../../assets/images/icon-2.svg';
 import Icon3 from '../../assets/images/icon-3.svg';
-import BlogImg from '../../assets/images/construction10.jpg'
+import BlogImg from '../../assets/images/construction10.jpg';
 // import BlogImg2 from '../../assets/images/construction11.jpg'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
