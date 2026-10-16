@@ -10,7 +10,7 @@ const About = () => {
     <>
       <Header />
       <main>
-        <Hero preHeading='Quality. Integrity. Value.' heading='About Us' text='We excel at transforming visions into reality <br /> through outstanding craftsmanship and precise'/> 
+        <Hero preHeading='Quality. Integrity. Value.' heading='About Us' text='We excel at transforming visions into reality <br /> through outstanding craftsmanship and precise' />
 
         <AboutNew />
 
@@ -48,7 +48,7 @@ const About = () => {
                   <div className='card-img-top'>
                     <img src={MemberImg} alt="" className='w-100' />
                   </div>
-                   <div className='card-body p-4'>
+                  <div className='card-body p-4'>
                     <div className="card-title pb-0 mb-0">
                       John Doe
                     </div>
@@ -68,7 +68,7 @@ const About = () => {
                   <div className='card-img-top'>
                     <img src={MemberImg} alt="" className='w-100' />
                   </div>
-                   <div className='card-body p-4'>
+                  <div className='card-body p-4'>
                     <div className="card-title pb-0 mb-0">
                       John Doe
                     </div>
@@ -88,7 +88,7 @@ const About = () => {
                   <div className='card-img-top'>
                     <img src={MemberImg} alt="" className='w-100' />
                   </div>
-                   <div className='card-body p-4'>
+                  <div className='card-body p-4'>
                     <div className="card-title pb-0 mb-0">
                       John Doe
                     </div>
