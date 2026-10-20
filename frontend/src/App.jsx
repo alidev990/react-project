@@ -11,7 +11,7 @@ import Services from './component/frontend/Services';
 import Projects from './component/frontend/Projects';
 import Blogs from './component/frontend/Blogs';
 import ContactUs from './component/frontend/ContactUs';
-
+import Login from './component/backend/Login';
 function App() {
   // const [count, setCount] = useState(0)
 
@@ -25,9 +25,8 @@ function App() {
              <Route path='/projects' element={<Projects /> } />
              <Route path='/blogs' element={<Blogs /> } />
              <Route path='/contactus' element={<ContactUs /> } />
+             <Route path='/admin/login' element={<Login /> } />
 
-             
-          
          </Routes>
        </BrowserRouter>
     </>
