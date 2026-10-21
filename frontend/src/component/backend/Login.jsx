@@ -1,8 +1,12 @@
 // import React from 'react';
 import Header from '../common/Header';
 import Footer from '../common/Footer';
-import { useForm } from "react-hook-form"
+import { useForm } from "react-hook-form";
+import { toast } from "react-toastify";
+import { useNavigate } from 'react-router-dom';
 const Login = () => {
+
+    const navigate = useNavigate();
 
     const {
         register,
@@ -10,8 +14,33 @@ const Login = () => {
         // watch,
         formState: { errors },
     } = useForm()
-    const onSubmit = (data) => {
-        console.log(data)
+    const onSubmit = async (data) => {
+        // console.log(data)
+
+        const res = await fetch("http://127.0.0.1:8000/api/authentication", {
+            method: 'post',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        });
+
+        const result = await res.json();
+
+        if (result.status === false) {
+            toast.error(result.message || "Login failed!");
+        } else {
+            toast.success(result.message || "Login successful!");
+
+            const userInfo ={
+                id: result.id,
+                token: result.token
+            }
+            localStorage.setItem('userInfo',JSON.stringify(userInfo))
+            navigate("/admin/dashboard")
+        }
+
+        // console.log(result);
     }
 
     return (
@@ -31,8 +60,8 @@ const Login = () => {
                                             {
                                             ...register('email', {
                                                 required: "This field is required",
-                                                pattern:{
-                                                    value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,  
+                                                pattern: {
+                                                    value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
                                                     message: "Invalid email address"
                                                 }
                                             })
@@ -47,7 +76,7 @@ const Login = () => {
                                         <label htmlFor="" className='form-label'>Password</label>
                                         <input
                                             {
-                                            ...register('password',{
+                                            ...register('password', {
                                                 required: "This field is required"
                                             })
                                             }

@@ -17,6 +17,7 @@
     "react-dom": "^19.2.8",
     "react-hook-form": "^7.90.0",
     "react-router-dom": "^7.18.4",
+    "react-toastify": "^11.1.0",
     "sass": "^1.105.1",
     "sass-embedded": "^1.105.1",
     "swiper": "^14.3.0"
