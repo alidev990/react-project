@@ -1,5 +1,15 @@
 # React + Vite
 
+## Environment setup
+
+Vite is configured to load environment files from the repository root. Copy the root `.env.example` to `.env` and set `VITE_API_BASE_URL` to the backend server origin, without an `/api` suffix. For example:
+
+```env
+VITE_API_BASE_URL=http://127.0.0.1:8000
+```
+
+Restart the Vite dev server after changing `.env`. Only put values intended to be public in variables prefixed with `VITE_`; Vite includes them in the browser bundle.
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:

@@ -17,7 +17,7 @@ const Login = () => {
     const onSubmit = async (data) => {
         // console.log(data)
 
-        const res = await fetch("http://127.0.0.1:8000/api/authentication", {
+        const res = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/authentication`, {
             method: 'post',
             headers: {
                 'content-type': 'application/json'
@@ -34,7 +34,7 @@ const Login = () => {
 
             const userInfo ={
                 id: result.id,
-                token: result.token
+                token: result.token,
             }
             localStorage.setItem('userInfo',JSON.stringify(userInfo))
             navigate("/admin/dashboard")
