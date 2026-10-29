@@ -6,7 +6,8 @@ import { useForm } from "react-hook-form";
 import { toast } from "react-toastify";
 import { useNavigate } from 'react-router-dom';
 import { AuthContext } from './context/Auth';
-import React, { useContext } from 'react';
+import  { useContext } from 'react';
+
 const Login = () => {
     const {login} = useContext(AuthContext)
     const navigate = useNavigate();
@@ -37,9 +38,8 @@ const Login = () => {
 
             const userInfo = {
                 id: result.id,
-                token: result.token,
-                name: result.name,
-                email: result.email
+                token: result.token
+              
 
             }
             localStorage.setItem('userInfo', JSON.stringify(userInfo))

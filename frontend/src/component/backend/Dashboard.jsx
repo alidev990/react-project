@@ -11,11 +11,7 @@ const Dashboard = () => {
                     <div className='row'>
                         <div className='col-md-3'>
                             {/* Sidebar */}
-                            <div className='card shadow border-0'>
-                                <div className='card-body'>
-                                    <h4>Sidebar</h4>
-                                </div>
-                            </div>
+                            
                         </div>
                         <div className='col-md-9 dashboard'>
                             {/* Dashboard */}
