@@ -12,7 +12,7 @@ export const AuthContext = createContext(null);
     const login = (user) =>{
         setUser(user)
     }
-
+    
     const logout = () =>{
         localStorage.removeItem('userInfo');
         setUser(null)
