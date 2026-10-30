@@ -1,6 +1,7 @@
 // import React from 'react'
 import Header from '../common/Header';
 import Footer from '../common/Footer';
+import SideBar from '../common/SideBar';
 
 const Dashboard = () => {
     return (
@@ -11,7 +12,7 @@ const Dashboard = () => {
                     <div className='row'>
                         <div className='col-md-3'>
                             {/* Sidebar */}
-                            
+                            <SideBar/>
                         </div>
                         <div className='col-md-9 dashboard'>
                             {/* Dashboard */}

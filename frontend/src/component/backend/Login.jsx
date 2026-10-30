@@ -50,7 +50,6 @@ const Login = () => {
         // console.log(result);
     }
 
-
     return (
         <>
             <Header />

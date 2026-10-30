@@ -1,9 +1,12 @@
-import React from 'react'
+import React, {useContext} from 'react';
+import { AuthContext } from '../backend/context/Auth';
+
 
 const SideBar = () => {
+    const {logout} = useContext(AuthContext) 
     return (
         <div className='card shadow border-0'>
-            <div className='card-body'>
+            <div className='card-body p-4 sidebar'>
                 <h4>Sidebar</h4>
                 <ul>
                     <li><a href="#">Dashboard</a></li>
@@ -11,7 +14,7 @@ const SideBar = () => {
                     <li><a href="#">Projects</a></li>
                     <li><a href="#">Articals</a></li>
                     <li>
-                        <button className='btn btn-primary'>Logout</button>
+                        <button onClick={logout} className='btn btn-primary mt-4'>Logout</button>
                     </li>
                 </ul>
             </div>
@@ -20,3 +23,4 @@ const SideBar = () => {
 }
 
 export default SideBar
+
